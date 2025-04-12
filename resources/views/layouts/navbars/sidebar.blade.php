@@ -26,12 +26,7 @@
                 <span class="sidebar-normal">{{ __('User profile') }} </span>
               </a>
             </li>
-            <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
-              <a class="nav-link" href="#">
-                <span class="sidebar-mini"> UM </span>
-                <span class="sidebar-normal"> {{ __('User Management') }} </span>
-              </a>
-            </li>
+            
           </ul>
         </div>
       </li>
@@ -43,87 +38,64 @@
         </a>
       </li>
       @endcan
-      @can('post_index')
-      <li class="nav-item{{ $activePage == 'posts' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('posts.index') }}">
-          <i class="material-icons">library_books</i>
-            <p>{{ __('Post') }}</p>
-        </a>
-      </li>
-      @endcan
-      @can('permission_index')
-      <li class="nav-item{{ $activePage == 'permissions' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('permissions.index') }}">
-          <i class="material-icons">bubble_chart</i>
-          <p>{{ __('Permissions') }}</p>
-        </a>
-      </li>
-      @endcan
-      @can('role_index')
-      <li class="nav-item{{ $activePage == 'roles' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('roles.index') }}">
-          <i class="material-icons">location_ons</i>
-            <p>{{ __('Roles') }}</p>
-        </a>
-      </li>
-      @endcan
+       
       <li class="nav-item{{ $activePage == 'notifications' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">notifications</i>
+          <i class="material-icons">engineering</i>
           <p>{{ __('Empleados') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">group</i>
           <p>{{ __('Clientes') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">local_shipping</i>
           <p>{{ __('Proveedores') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">content_paste</i>
           <p>{{ __('Reportes') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">fastfood</i>
           <p>{{ __('Productos') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">restaurant</i>
           <p>{{ __('Orden') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">point_of_sale</i>
           <p>{{ __('Ventas') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">shopping_cart_checkout</i>
           <p>{{ __('Compras') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">inventory</i>
           <p>{{ __('Inventario') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
-          <i class="material-icons">language</i>
+          <i class="material-icons">calendar_month</i>
           <p>{{ __('Calendario') }}</p>
         </a>
       </li>
